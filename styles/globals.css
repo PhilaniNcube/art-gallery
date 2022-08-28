@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Outfit:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  @apply font-outfit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-brand;
+}
