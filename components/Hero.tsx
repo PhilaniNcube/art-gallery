@@ -3,23 +3,26 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <header className="grid grid-cols-3 relative">
-      <div className="bg-dark"></div>
+    <header className="grid grid-cols-2 md:grid-cols-3 relative">
+      <div className="hidden md:flex bg-dark"></div>
       <Image
         src="/images/desktop/image-hero@2x.jpg"
         alt="Hero"
         width={1080}
         height={1600}
-        className="w-full max-h-[95vh] object-cover"
+        className="w-full max-h-[95vh] min-h-[90vh] object-cover"
       />
       <div className="bg-white"></div>
       <div className="absolute inset-0">
-        <div className="max-w-6xl mx-auto px-4 flex h-full justify-between py-48">
-          <h1 className="text-4xl md:text-7xl lg:text-[6rem]  mix-blend-difference font-extrabold uppercase text-white">
+        <div className="max-w-6xl mx-auto px-4 flex md:flex-row items-end flex-col h-full md:justify-between py-48">
+          <h1 className="hidden md:flex text-left md:text-7xl lg:text-[6rem]  mix-blend-difference font-extrabold uppercase text-white">
             Modern <br /> Art Gallery
           </h1>
 
           <div className="flex flex-col">
+            <h1 className="md:hidden text-left text-4xl md:text-7xl lg:text-[6rem]  mix-blend-difference font-extrabold uppercase text-white">
+              Modern <br /> Art Gallery
+            </h1>
             <p className="text-grey text-lg max-w-[35ch] leading-7">
               The arts in the collection of the Modern Art Gallery all started
               from a spark of inspiration. Will these pieces inspire you? Visit

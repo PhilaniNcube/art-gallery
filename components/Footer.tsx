@@ -7,11 +7,11 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-dark py-16">
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
-        <h2 className="text-3xl font-bold font-brand uppercase text-white leading-7">
+      <div className="max-w-6xl mx-auto px-4 flex md:flex-row flex-col md:items-center justify-between">
+        <h2 className="text-3xl font-bold font-brand uppercase text-white md:leading-7">
           Modern <br /> Art Gallery
         </h2>
-        <p className="text-lg text-white leading-7">
+        <p className="md:text-lg py-12 text-white text-sm md:leading-7">
           The Modern Art Gallery is free to all visitors and open <br /> seven
           days a week from 8am to 9am. Find us at 99 <br />
           King Street, Newport, USA
